@@ -26,7 +26,7 @@ const actions = {
 };
 
 const getters = {
-  stocks: state => {
+  stocks (state) {
     return state.stocks;
   }
 };
