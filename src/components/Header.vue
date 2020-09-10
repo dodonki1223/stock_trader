@@ -23,7 +23,7 @@
             aria-expanded="false">Save & Load<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#" @click="saveData">Save Data</a></li>
-            <li><a href="#">Load Data</a></li>
+            <li><a href="#" @click="loadData">Load Data</a></li>
           </ul>
         </li>
       </ul>
@@ -55,6 +55,9 @@ export default {
       };
       // $http で vue-resource を使用することになる
       this.$http.put('data.json', data);
+    },
+    loadData() {
+  
     }
   }
 }
