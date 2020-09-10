@@ -41,23 +41,24 @@ export default {
     }
   },
   methods: {
-    ...mapActions([
-      'randomizeStocks'
-    ]),
+    ...mapActions({
+      randomizeStocks: 'randomizeStocks',
+      fetchData: 'loadData'
+    }),
     endDay() {
       this.randomizeStocks();
     },
     saveData() {
       const data = {
         funds: this.$store.getters.funds,
-        stockPortofolio: this.$store.getters.stockPortfolio,
+        stockPortfolio: this.$store.getters.stockPortfolio,
         stocks: this.$store.getters.stocks
       };
       // $http で vue-resource を使用することになる
       this.$http.put('data.json', data);
     },
     loadData() {
-  
+      this.fetchData();
     }
   }
 }
