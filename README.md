@@ -3,6 +3,8 @@
 Udemy の [Vue JS 2 - The Complete Guide (incl. Vue Router & Vuex)](https://www.udemy.com/course/vuejs-2-the-complete-guide/) 教材で作成した株式トレーダーアプリです  
 アプリの作成後、Docker化して開発がしやすいようにカスタマイズしています
 
+![00_stock_trader](https://raw.githubusercontent.com/dodonki1223/image_garage/master/stock_trader/00_stock_trader.gif)
+
 ## 環境
 
 環境については以下の通りである
